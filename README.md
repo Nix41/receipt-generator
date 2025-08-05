@@ -13,7 +13,7 @@ The application uses the `informers` gem with zero-shot classification to automa
 
 ## Requirements
 
-- Ruby 2.6.0 or higher
+- Ruby 3.2.2 or higher
 - `informers` gem
 
 ## Installation
@@ -47,9 +47,11 @@ Enter each item on a new line using the following format:
 ```
 
 For example:
-- `1 book at 12.49`
-- `1 imported box of chocolates at 10.00`
-- `1 imported bottle of perfume at 47.50`
+```
+1 book at 12.49
+1 imported box of chocolates at 10.00
+1 imported bottle of perfume at 47.50
+```
 
 Press Enter on an empty line to finish input and generate the receipt.
 
@@ -70,6 +72,8 @@ Receipt:
 Sales Taxes: 1.5
 Total: 29.83
 ```
+
+Warning: The first time the application is used, there will be a delay while the `informers` gem downloads the model.
 
 ## Exception Handling
 
